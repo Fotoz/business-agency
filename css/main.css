@@ -82,6 +82,7 @@ body {
 body {
 	font: 15px 'NunitoSansRegular', sans-serif;
 	line-height: 1.6;
+	color: #424242;
 	min-width: 320px;
 	overflow-x: hidden;
 }
@@ -121,8 +122,9 @@ a {
 }
 .wrapper {
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1074px;
 	margin: 0 auto;
+	padding: 0 25px;
 	position: relative;
 }
 
@@ -153,11 +155,16 @@ Section: Header
 .header-mail {
 	margin-right: 10px;
 }
+.header-phone:hover::before,
+.header-mail:hover::before {
+	color: #dd2a24;
+}
 .header-phone::before {
 	content: '\f3cd';
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	font-size: 19px;
+	transition: color .1s linear;
 
 	position: absolute;
 	left: -20px;
@@ -181,6 +188,7 @@ Section: Header
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	font-size: 19px;
+	transition: color .1s linear;
 
 	position: absolute;
 	left: -28px;
@@ -191,9 +199,14 @@ Section: Header
 	color: #fff;
 	background-color: #1287bf;
 	border-radius: 3px;
+	transition: background .1s linear;
 
 	display: inline-block;
 	padding: 1px 8px;
+	margin-right: 25px;
+}
+.header-facebook:hover {
+	background-color: #dd2a24;
 }
 
 /* header-main-line */
@@ -207,7 +220,7 @@ Section: Header
 .header-logo {
 	position: absolute;
 	top: 41px;
-	left: 85px;
+	left: 110px;
 	z-index: 1;
 }
 .header-logo p:nth-child(1) {
@@ -232,15 +245,15 @@ Section: Header
 .header-nav {
 	position: absolute;
 	top: 55px;
-	right: 203px;
+	right: 228px;
 	z-index: 1;
 
 	font: 15px 'NunitoSansBold';
 }
 .header-nav-item {
+	position: relative;
 	color: #424242;
 
-	position: relative;
 	transition: color .15s linear;
 }
 .header-nav-item:not(:last-child) {
@@ -285,7 +298,7 @@ Section: Header
 .header-btn {
 	position: absolute;
 	top: 47px;
-	right: 0;
+	right: 25px;
 	z-index: 1;
 
 	font: 15px 'NunitoSansBold';
@@ -298,7 +311,7 @@ Section: Header
 
 	padding: 6px 20px;
 
-	transition: border .2s linear;
+	transition: border .15s linear;
 }
 .header-btn:hover {
 	border: 2px solid #424242;
@@ -337,8 +350,6 @@ Section: Header
 .header-bg-subtitle {
 	font: 30px 'NunitoSansLight';
 	line-height: 1;
-
-	bottom: 0;
 }
 
 /* header-bg-btn */
@@ -356,17 +367,67 @@ Section: Header
 	margin: 35px auto;
 	padding: 16px 36px;
 
-	transition: border .2s linear;
+	transition: border .15s linear;
 }
 .header-bg-btn:hover {
 	border: 3px solid #fff;
 }
 
 /*** ======================================================================
-Section: 
+Section: About Us
 ====================================================================== ***/
 
+.s-about-us {
+	background-color: #fff;
 
+	text-align: center;
+	padding: 95px 0 105px;
+}
+
+/* section-titles */
+.section-title {
+	font: 36px 'NunitoSansBold';
+	line-height: 1.1;
+}
+.section-subtitle {
+	font: 20px 'NunitoSansLight';
+
+	position: relative;
+}
+.section-subtitle::after {
+	content: '';
+	position: absolute;
+	top: 38px;
+	right: calc(50% - 25px);
+	z-index: 1;
+
+	width: 50px;
+	height: 5px;
+
+	background-color: #424242;
+}
+
+/* about-us-items */
+.about-us-items {
+	margin-top: 60px;
+}
+.about-us-item {
+	width: 33.33333333%;
+	float: left;
+	padding: 0 50px;
+}
+.about-us-item-title {
+	font: 22px 'NunitoSansBold';
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+.about-us-item-text {
+	font: 14px 'NunitoSansLight';
+	line-height: 1.5;
+	color: #5c5c5c;
+
+	margin: 0;
+}
 
 /*** ======================================================================
 Section: 
