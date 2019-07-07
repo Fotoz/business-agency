@@ -147,6 +147,8 @@ Section: Header
 .header-phone,
 .header-mail {
 	color: #424242;
+	transition: color .1s linear;
+
 	position: relative;
 }
 .header-phone {
@@ -155,8 +157,8 @@ Section: Header
 .header-mail {
 	margin-right: 10px;
 }
-.header-phone:hover::before,
-.header-mail:hover::before {
+.header-phone:hover,
+.header-mail:hover {
 	color: #dd2a24;
 }
 .header-phone::before {
@@ -164,7 +166,6 @@ Section: Header
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	font-size: 19px;
-	transition: color .1s linear;
 
 	position: absolute;
 	left: -20px;
@@ -188,7 +189,6 @@ Section: Header
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	font-size: 19px;
-	transition: color .1s linear;
 
 	position: absolute;
 	left: -28px;
@@ -206,7 +206,7 @@ Section: Header
 	margin-right: 25px;
 }
 .header-facebook:hover {
-	background-color: #dd2a24;
+	background-color: #0e6a94;
 }
 
 /* header-main-line */
@@ -294,8 +294,8 @@ Section: Header
 	transform: scale(1);
 }
 
-/* header-btn */
-.header-btn {
+/* header-nav-btn */
+.header-nav-btn {
 	position: absolute;
 	top: 47px;
 	right: 25px;
@@ -307,20 +307,19 @@ Section: Header
 
 	background-color: #dd2a24;
 	border-radius: 3px;
-	border: 2px solid transparent;
 
-	padding: 6px 20px;
+	padding: 8px 22px;
 
-	transition: border .15s linear;
+	transition: background .15s linear;
 }
-.header-btn:hover {
-	border: 2px solid #424242;
+.header-nav-btn:hover {
+	background-color: #b9241e;
 }
 
 /* header-bg */
 .header-bg {
 	background: url(../images/header-bg.jpg) no-repeat center/cover;
-	padding: 165px 0 198px;
+	padding: 165px 0 204px;
 
 	position: relative;
 	z-index: 10;
@@ -352,8 +351,8 @@ Section: Header
 	line-height: 1;
 }
 
-/* header-bg-btn */
-.header-bg-btn {
+/* header-btn */
+.header-btn {
 	font: 24px 'NunitoSansBold';
 	text-transform: uppercase;
 	letter-spacing: .3px;
@@ -361,16 +360,15 @@ Section: Header
 
 	background-color: #f8cd53;
 	border-radius: 7px;
-	border: 3px solid transparent;
 
 	display: table;
-	margin: 35px auto;
-	padding: 16px 36px;
+	margin: 33px auto;
+	padding: 18px 38px;
 
-	transition: border .15s linear;
+	transition: background .15s linear;
 }
-.header-bg-btn:hover {
-	border: 3px solid #fff;
+.header-btn:hover {
+	background-color: #c3a041;
 }
 
 /*** ======================================================================
@@ -381,17 +379,21 @@ Section: About Us
 	background-color: #fff;
 
 	text-align: center;
-	padding: 95px 0 105px;
+	padding: 100px 0;
 }
 
 /* section-titles */
 .section-title {
 	font: 36px 'NunitoSansBold';
+	text-align: center;
 	line-height: 1.1;
 }
 .section-subtitle {
 	font: 20px 'NunitoSansLight';
+	text-align: center;
 
+	display: block;
+	margin-bottom: 60px;
 	position: relative;
 }
 .section-subtitle::after {
@@ -408,9 +410,6 @@ Section: About Us
 }
 
 /* about-us-items */
-.about-us-items {
-	margin-top: 60px;
-}
 .about-us-item {
 	width: 33.33333333%;
 	float: left;
@@ -430,10 +429,90 @@ Section: About Us
 }
 
 /*** ======================================================================
-Section: 
+Section: Our Approch
 ====================================================================== ***/
 
+.s-our-approch {
+	background-color: #f3f3f3;
 
+	padding: 100px 0;
+}
+
+/* approch-item */
+.approch-item {
+	background-color: #fff;
+	border: 2px solid #e5e5e5;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px #e5e5e5, -2px -2px 5px #e5e5e5;
+
+	position: relative;
+}
+.approch-item:not(:last-child) {
+	margin-bottom: 37px;
+}
+.approch-img,
+.approch-content {
+	float: left;
+}
+.approch-img {
+	width: 33.3%;
+
+	border-radius: 3px 0 0 3px;
+}
+.approch-content {
+	width: 66.7%;
+	padding: 66px 70px 42px 90px;
+}
+.approch-title {
+	font: 18px 'NunitoSansBold';
+}
+.approch-text {
+	font: 14px 'NunitoSansLight';
+	line-height: 1.5;
+
+	margin-top: 7px;
+}
+
+/* approch-step */
+.approch-step {
+	position: absolute;
+	top: 50%;
+	left: 33.3%;
+	z-index: 1;
+
+	padding: 12px 29px;
+	transform: translate(-50%, -50%);
+
+	color: #fff;
+	font-size: 20px;
+	line-height: 1;
+
+	background-color: #de2b24;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+.approch-step::first-letter {
+	font: 55px 'NunitoSansBold';
+	line-height: 1;
+	margin-left: 3px;
+}
+
+/* approch-modificators */
+.approch-img--right {
+	border-radius: 0 3px 3px 0;
+	float: right;
+}
+.approch-step--right {
+	top: 50%;
+	right: 33.3%;
+	left: initial;
+
+	transform: translate(50%, -50%);
+}
+.approch-content--right {
+	text-align: right;
+	padding: 66px 90px 42px 70px;
+}
 
 /*** ======================================================================
 Section: 
