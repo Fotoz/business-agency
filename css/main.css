@@ -97,6 +97,7 @@ ul li {
 input,
 textarea,
 button {
+	border: none;
 	outline: none;
 }
 a {
@@ -171,6 +172,7 @@ Section: Header
 	left: -20px;
 	top: -5px;
 	z-index: 1;
+	width: 100%;
 }
 .header-phone::after {
 	content: '';
@@ -194,6 +196,7 @@ Section: Header
 	left: -28px;
 	top: -5px;
 	z-index: 1;
+	width: 100%;
 }
 .header-facebook {
 	color: #fff;
@@ -318,7 +321,7 @@ Section: Header
 
 /* header-bg */
 .header-bg {
-	background: url(../images/header-bg.jpg) no-repeat center/cover;
+	background: url(../images/header-bgs/header-bg--1920.jpg) no-repeat center/cover;
 	padding: 165px 0 204px;
 
 	position: relative;
@@ -461,7 +464,7 @@ Section: Our Approch
 }
 .approch-content {
 	width: 66.7%;
-	padding: 66px 70px 42px 90px;
+	padding: 71px 70px 42px 90px;
 }
 .approch-title {
 	font: 18px 'NunitoSansBold';
@@ -480,21 +483,25 @@ Section: Our Approch
 	left: 33.3%;
 	z-index: 1;
 
-	padding: 12px 29px;
+	width: 105px;
+	height: 105px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	transform: translate(-50%, -50%);
 
 	color: #fff;
 	font-size: 20px;
-	line-height: 1;
+	line-height: .9;
+	text-align: center;
 
 	background-color: #de2b24;
 	border: 2px solid #fff;
 	border-radius: 3px;
 }
-.approch-step::first-letter {
-	font: 55px 'NunitoSansBold';
-	line-height: 1;
-	margin-left: 4px;
+.inner-step::first-letter {
+	font: 56px 'NunitoSansBold';
+	line-height: .9;
 }
 
 /* approch-modificators */
@@ -511,7 +518,7 @@ Section: Our Approch
 }
 .approch-content--right {
 	text-align: right;
-	padding: 66px 90px 42px 70px;
+	padding: 71px 90px 42px 70px;
 }
 
 /*** ======================================================================
@@ -667,4 +674,167 @@ Section: Consultation
 }
 .form-btn:hover {
 	background-color: #b9241e;
+}
+
+/*** ======================================================================
+Section: Footer
+====================================================================== ***/
+
+.footer {
+	background-color: #2a2a2a;
+
+	text-align: center;
+	padding-top: 80px;
+}
+.footer-title {
+	font: 29px 'NunitoSansBold';
+	color: #fff;
+}
+
+/* footer-social */
+.footer-social {
+	margin: 20px 0 30px;
+	font-size: 20px;
+}
+.footer-social-link {
+	display: inline-block;
+	width: 50px;
+	padding: 7px 0;
+
+	color: #fff;
+
+	border: 2px solid #515151;
+	border-radius: 3px;
+	transition: border-color .15s linear;
+}
+.footer-social-link:hover {
+	border-color: #de2b24;
+}
+.footer-social-link:not(:last-child) {
+	margin-right: 20px;
+}
+
+/* footer-form */
+.footer-form-title {
+	font-size: 14px;
+	color: #cecece;
+
+	margin-bottom: 30px;
+}
+.footer-form-input {
+	font: 14px 'NunitoSansRegular';
+	color: #fff;
+
+	display: block;
+	width: 68%;
+	margin: 0 auto 25px;
+	padding: 15px;
+
+	background-color: #515151;
+	border: 1px solid transparent;
+
+	transition: all .15s linear;
+}
+.footer-form-input:focus {
+	border-color: #fff;
+	box-shadow: 0 0 2px #fff;
+}
+
+/* Стилизация плейсхолдепра для footer-form-input */
+.footer-form-input::-webkit-input-placeholder {
+	color: #cecece;
+	opacity: 1;
+}
+.footer-form-input:-moz-placeholder {
+	color: #cecece;
+	opacity: 1;
+}
+.footer-form-input::-moz-placeholder {
+	color: #cecece;
+	opacity: 1;
+}
+.footer-form-input:-ms-input-placeholder {
+	color: #cecece;
+	opacity: 1;
+}
+.footer-form-input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+.footer-form-input:focus:-moz-placeholder {
+	color: transparent;
+}
+.footer-form-input:focus::-moz-placeholder {
+	color: transparent;
+}
+.footer-form-input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+/* footer-form-btn */
+.footer-form-btn {
+	font: 17px 'NunitoSansBold';
+	color: #fff;
+	cursor: pointer;
+
+	background-color: transparent;
+	border: 2px solid #515151;
+	border-radius: 3px;
+
+	padding: 12px 36px;
+
+	transition: background .15s linear;
+}
+.footer-form-btn:hover {
+	background-color: #515151;
+}
+
+/* footer-bottom-line */
+.footer-bottom-line {
+	background-color: #515151;
+
+	font-size: 14px;
+	color: #cecece;
+
+	margin-top: 80px;
+	padding: 23px 25px;
+}
+.footer-bottom-line a {
+	font-size: 14px;
+	color: #cecece;
+}
+.footer-bottom-line a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* toTop button */
+.toTop {
+	position: fixed;
+	right: -100px;
+	bottom: 0;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 100%;
+
+	transition: background .25s linear, right .5s linear;
+}
+.toTop:hover {
+	background-color: rgba(100,100,100,.5);
+	cursor: pointer;
+}
+.toTop-icon {
+	color: #646464;
+	font-size: 24px;
+
+	transition: color .25s linear;
+}
+.toTop:hover .toTop-icon {
+	color: #fff;
+}
+.toTop-active {
+	right: 0;
 }

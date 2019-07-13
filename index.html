@@ -20,12 +20,12 @@
 
 	<body>
 		<!-- Section: Header -->
-			<header>
+			<header id="header">
 				<div class="header-contacts">
 					<div class="wrapper">
 
 						<div class="header-contacts-items">
-							<a class="header-phone" href="tel:6337 7128">6337 7128</a>
+							<a class="header-phone" href="tel:63377128">6337 7128</a>
 							<a class="header-mail" href="mailto:info@business.co">info@business.co</a>
 							<a class="header-facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
 						</div>
@@ -42,13 +42,13 @@
 						</div>
 
 						<nav class="header-nav">
-							<a class="header-nav-item" href="#">Home</a>
-							<a class="header-nav-item" href="#">About Us</a>
-							<a class="header-nav-item" href="#">Our Approch</a>
-							<a class="header-nav-item" href="#">Our Work</a>
+							<a class="header-nav-item" href="#header">Home</a>
+							<a class="header-nav-item" href="#s-about-us">About Us</a>
+							<a class="header-nav-item" href="#s-our-approch">Our Approch</a>
+							<a class="header-nav-item" href="#s-our-work">Our Work</a>
 						</nav>
 
-						<a class="header-nav-btn" href="#">Free Consultation</a>
+						<a class="header-nav-btn" href="#s-consultation">Free Consultation</a>
 
 					</div>
 				</div>
@@ -58,7 +58,7 @@
 
 						<h1 class="header-bg-title no-margin">We Providing</h1>
 						<span class="header-bg-subtitle">Social Media marketing for business</span>
-						<a class="header-btn" href="#">Free Consultation</a>
+						<a class="header-btn" href="#s-consultation">Free Consultation</a>
 
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 		<!-- End Section: Header -->
 
 		<!-- Section: About Us -->
-			<section class="s-about-us">
+			<section class="s-about-us" id="s-about-us">
 				<div class="wrapper">
 
 					<h2 class="section-title no-margin">About Us</h2>
@@ -95,7 +95,7 @@
 		<!-- End Section: About Us -->
 
 		<!-- Section: Our Approch -->
-			<section class="s-our-approch">
+			<section class="s-our-approch" id="s-our-approch">
 				<div class="wrapper">
 
 					<h2 class="section-title no-margin">Our Approch</h2>
@@ -104,7 +104,9 @@
 					<div class="approch-item clearfix">
 						<img class="approch-img img-responsive" src="images/our-approch/our-approch-1.jpg" alt="">
 
-						<div class="approch-step">1 <br> step</div>
+						<div class="approch-step">
+							<div class="inner-step">1<br>step</div>
+						</div>
 
 						<div class="approch-content">
 							<h4 class="approch-title no-margin">Step 1 : Heading Here</h4>
@@ -115,7 +117,9 @@
 					<div class="approch-item clearfix">
 						<img class="approch-img img-responsive approch-img--right" src="images/our-approch/our-approch-2.jpg" alt="">
 
-						<div class="approch-step approch-step--right">2 <br> step</div>
+						<div class="approch-step approch-step--right">
+							<div class="inner-step">2<br>step</div>
+						</div>
 
 						<div class="approch-content approch-content--right">
 							<h4 class="approch-title no-margin">Step 2 : Heading Here</h4>
@@ -126,7 +130,9 @@
 					<div class="approch-item clearfix">
 						<img class="approch-img img-responsive" src="images/our-approch/our-approch-3.jpg" alt="">
 
-						<div class="approch-step">3 <br> step</div>
+						<div class="approch-step">
+							<div class="inner-step">3<br>step</div>
+						</div>
 
 						<div class="approch-content">
 							<h4 class="approch-title no-margin">Step 3 : Heading Here</h4>
@@ -137,7 +143,9 @@
 					<div class="approch-item clearfix">
 						<img class="approch-img img-responsive approch-img--right" src="images/our-approch/our-approch-4.jpg" alt="">
 
-						<div class="approch-step approch-step--right">4 <br> step</div>
+						<div class="approch-step approch-step--right">
+							<div class="inner-step">4<br>step</div>
+						</div>
 
 						<div class="approch-content approch-content--right">
 							<h4 class="approch-title no-margin">Step 4 : Heading Here</h4>
@@ -150,7 +158,7 @@
 		<!-- End Section: Our Approch -->
 
 		<!-- Section: Works -->
-			<section class="s-works">
+			<section class="s-works" id="s-our-work">
 				<div class="wrapper clearfix">
 
 					<h2 class="section-title no-margin">Our Work</h2>
@@ -265,7 +273,7 @@
 		<!-- End Section: Works -->
 
 		<!-- Section: Consultation -->
-			<section class="s-consultation">
+			<section class="s-consultation" id="s-consultation">
 				<div class="wrapper">
 
 					<h2 class="section-title no-margin">Get Your Free Facebook Analysis Now</h2>
@@ -276,9 +284,9 @@
 						</div>
 
 						<form name="consultation-form" action="#" method="post">
-							<input class="form-input" type="text" name="name" placeholder="Your Name" required>
-							<input class="form-input" type="tel" name="phone" placeholder="Contact Number" required>
-							<input class="form-input" type="text" name="company-name" placeholder="Company Name">
+							<input class="form-input" type="text" name="name" placeholder="Your Name" autocomplete="off" required>
+							<input class="form-input" type="tel" name="phone" placeholder="Contact Number" autocomplete="off" required>
+							<input class="form-input" type="text" name="company-name" placeholder="Company Name" autocomplete="off">
 							<button class="form-btn" type="submit" name="submit">Submit now</button>
 						</form>
 					</div>
@@ -287,9 +295,39 @@
 			</section>
 		<!-- End Section: Consultation -->
 
-		<!-- jQuery -->
-			<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+		<!-- Section: Footer -->
+			<footer class="footer">
+				<div class="wrapper">
+
+					<h3 class="footer-title no-margin">Get in touch</h3>
+
+					<div class="footer-social">
+						<a class="footer-social-link" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a class="footer-social-link" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a class="footer-social-link" href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+						<a class="footer-social-link" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+
+					<form name="footer-form" action="#" method="post">
+						<div class="footer-form-title">Subscribe to our newsletter to stay update with what is new</div>
+						
+						<input class="footer-form-input" type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+						<button class="footer-form-btn" type="submit" name="subscribe">Subscribe</button>
+					</form>
+
+				</div> <!-- /.wrapper -->
+
+				<div class="footer-bottom-line"><a href="https://cssauthor.com/" target="_blank">Cssauthor.com</a> &#169; 2019 All Rights Reserved</div>
+			</footer>
+		<!-- End Section: Footer -->
+
+		<!-- toTop button -->
+			<div class="toTop">
+				<div class="toTop-icon"><i class="fas fa-angle-double-up"></i></div>
+			</div>
+
 		<!-- JS Locals -->
+			<script src="libs/jquery/jquery-3.4.1.min.js"></script>
 			<script src="js/common.js"></script>
 	</body>
 
