@@ -2,24 +2,377 @@
 Responsive Media Queries
 ====================================================================== ***/
 
-@media screen and (max-width: 1200px) {
-	
-}
 @media screen and (max-width: 1024px) {
-	
+
+	/*** Section: Header ***/
+	.header-bg {
+		background-image: url(../images/header-bgs/header-bg--1024.jpg);
+	}
+
+	/*** Section: About Us ***/
+	.about-us-item {
+		padding: 0 35px;
+	}
+
+	/*** Section: Our Approch ***/
+	.approch-content {
+		padding-top: 66px;
+	}
+
 }
+
 @media screen and (max-width: 992px) {
+
+	/*** Global Styles ***/
+	.s-padding {
+		padding: 75px 0;
+	}
+
+	/*** Section: Header ***/
+	.header-main-line {
+		padding: 27px 0;
+	}
+	.desktop-nav {
+		right: 25px;
+	}
+	.desktop-btn {
+		display: none;
+	}
+	.header-bg {
+		padding-bottom: 195px;
+	}
+
+	/*** Section: About Us ***/
+	.about-us-item {
+		width: 100%;
+		max-width: 330px;
+
+		margin: 0 auto;
+		float: none;
+	}
+	.about-us-item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	/*** Section: Our Approch ***/
+	.s-our-approch .section-subtitle {
+		margin-bottom: 103px;
+	}
+	.approch-items-wrapper {
+		width: 100%;
+		max-width: 710px;
+		margin: 85px auto 0;
+	}
+	.approch-items-wrapper:not(:last-child) {
+		margin-bottom: 0;
+	}
+	.approch-item {
+		width: 100%;
+		max-width: 340px;
+
+		float: left;
+	}
+	.approch-item-left {
+		margin-right: 30px;
+	}
+	.approch-item:not(:last-child) {
+		margin-bottom: 0;
+	}
+	.approch-img,
+	.approch-content {
+		float: none;
+		width: 100%;
+	}
+	.approch-img {
+		border-radius: 3px 3px 0 0;
+	}
+	.approch-content {
+		padding: 20px;
+	}
+	.approch-step {
+		top: 0;
+		left: 0;
+		transform: translate(25%, -50%);
+
+		font-size: 18px;
+
+		width: 85px;
+		height: 85px;
+	}
+	.approch-step--right {
+		right: 0;
+		left: initial;
+		transform: translate(-25%, -50%);
+	}
+	.inner-step::first-letter {
+		font-size: 45px;
+	}
+
+	/*** Section: Consultation ***/
+	.form-wrapper {
+		max-width: 669px;
+	}
+
+	/*** Section: Works ***/
+	.works-name {
+		font-size: 24px;
+	}
+	.works-text {
+		font-size: 15px;
+	}
 	
 }
+
 @media screen and (max-width: 768px) {
-	
+
+	/*** Global Styles ***/
+	.wrapper {
+		padding: 0 15px;
+	}
+	.section-title {
+		font-size: 34px;
+	}
+	.section-subtitle {
+		font-size: 18px;
+	}
+
+	/*** Section: Header ***/
+	.header-contacts,
+	.desktop-nav {
+		display: none;
+	}
+	.header-main-line {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+
+		box-shadow: 0 1px 3px #e5e5e5;
+
+		padding: 8px 0;
+	}
+	.header-logo {
+		margin-left: 70px;
+	}
+	.header-logo::before {
+		font-size: 40px;
+		top: -11px;
+		left: -60px;
+	}
+	.header-logo-name {
+		font-size: 26px;
+	}
+	.header-logo-tag {
+		font-size: 13px;
+	}
+	.header-bg {
+		padding: 225px 0 160px;
+	}
+	.header-btn {
+		font-size: 20px;
+		padding: 15px 30px;
+	}
+
+	/* mobile-nav */
+	.mobile-nav {
+		padding: 7px 0;
+
+		font: 15px 'NunitoSansBold';
+		text-align: right;
+	}
+	.mobile-nav-toggle {
+		display: block;
+		top: 20px;
+	}
+	.mobile-link {
+		display: block;
+		padding-right: 48px;
+	}
+	.mobile-link.is-active {
+		color: #dd2a24;
+	}
+	.mobile-link.is-active::after {
+		background: #dd2a24;
+	}
+	.mobile-link:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.mobile-link::after {
+		right: 24px;
+	}
+
+	/*** Section: Our Approch ***/
+	.s-our-approch .section-subtitle {
+		margin-bottom: 90px;
+	}
+	.approch-items-wrapper {
+		margin-top: 68px;
+	}
+	.approch-item {
+		float: none;
+		margin: 0 auto;
+	}
+	.approch-item:not(:last-child) {
+		margin-bottom: 68px;
+	}
+
+	/*** Section: Works ***/
+	.works-col-wrapper {
+		width: 100%;
+		max-width: 450px;
+		margin: 0 auto;
+	}
+	.works-col {
+		width: 50%;
+		max-width: 225px;
+	}
+
+	/*** Section: Consultation ***/
+	.form-wrapper {
+		padding: 50px 40px;
+		max-width: 561px;
+	}
+
+	/*** Section: Footer ***/
+	.footer {
+		padding-top: 60px;
+	}
+	.footer-bottom-line {
+		margin-top: 60px;
+	}
+
+	/*** toTop button ***/
+	.toTop {
+		display: none;
+	}
+
 }
+
 @media screen and (max-width: 640px) {
-	
+
+	/*** Global Styles ***/
+	.s-padding {
+		padding: 63px 0;
+	}
+
+	/*** Section: Header ***/
+	.header-main-line {
+		padding: 3px 0;
+	}
+	.header-logo {
+		margin-left: 56px;
+	}
+	.header-logo-name {
+		font-size: 24px;
+	}
+	.header-logo-tag {
+		font-size: 12px;
+	}
+	.header-logo::before {
+		font-size: 37px;
+		top: -10px;
+		left: -56px;
+	}
+	.header-bg {
+		background-image: url(../images/header-bgs/header-bg--640.jpg);
+	}
+	.header-bg {
+		padding: 185px 0 170px;
+	}
+	.header-bg-title {
+		font-size: 45px;
+	}
+	.header-bg-subtitle {
+		font-size: 26px;
+	}
+	.header-btn {
+		margin-top: 25px;
+	}
+
+	/*** Section: Consultation ***/
+	.form-wrapper {
+		padding: 40px 30px;
+	}
+	.hide-form-btn {
+		display: none;
+	}
+
 }
+
 @media screen and (max-width: 480px) {
+
+	/*** Global Styles ***/
+	.section-title {
+		font-size: 32px;
+	}
+	.section-subtitle {
+		font-size: 17px;
+	}
+
+	/*** Section: Header ***/
+	.header-bg-title {
+		font-size: 43px;
+	}
+	.header-bg-subtitle {
+		font-size: 21px;
+	}
+	.header-btn {
+		font-size: 18px;
+		padding: 13px 25px;
+	}
+
+	/*** Section: Works ***/
+	.works-col-wrapper {
+		max-width: 225px;
+	}
+	.works-col {
+		width: 100%;
+		float: none;
+	}
+
+	/*** Section: Consultation ***/
+	.form-wrapper {
+		padding: 30px 15px;
+	}
+	.form-text {
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+
+	/*** Section: Footer ***/
+	.footer {
+		padding-top: 45px;
+	}
+	.footer-social-link:not(:last-child) {
+		margin-right: 5px;
+	}
+	.footer-bottom-line {
+		font-size: 13px;
+		margin-top: 50px;
+		padding: 15px;
+	}
 	
 }
-@media screen and (max-width: 320px){
-	
+
+@media screen and (max-width: 320px) {
+
+	/*** Section: Header ***/
+	.header-bg {
+		padding: 170px 0 150px;
+	}
+	.header-logo {
+		margin-left: 0;
+	}
+	.header-logo::before {
+		display: none;
+	}
+	.mobile-nav-toggle {
+		right: 15px;
+	}
+	.header-btn {
+		font-size: 17px;
+		padding: 11px 22px;
+	}
+
 }

@@ -12,8 +12,7 @@
 		<link rel="icon" href="images/favicon/favicon-16x16.png">
 		<link rel="stylesheet" href="libs/normalize/normalize.min.css">
 		<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/all.min.css">
 
 		<script src="libs/prefixfree/prefixfree.min.js"></script>
 	</head>
@@ -33,32 +32,46 @@
 					</div>
 				</div>
 
-				<div class="header-main-line">
+				<div class="header-main-line" id="header_main_line">
 					<div class="wrapper">
 
 						<div class="header-logo">
-							<p class="no-margin">Business</p>
-							<p class="no-margin">Tagline goes here</p>
+							<div class="header-logo-name">Business</div>
+							<div class="header-logo-tag">Tagline goes here</div>
 						</div>
 
-						<nav class="header-nav">
-							<a class="header-nav-item" href="#header">Home</a>
-							<a class="header-nav-item" href="#s-about-us">About Us</a>
-							<a class="header-nav-item" href="#s-our-approch">Our Approch</a>
-							<a class="header-nav-item" href="#s-our-work">Our Work</a>
+						<!-- desktop-nav -->
+						<nav class="desktop-nav">
+							<a class="desktop-link" href="#header">Home</a>
+							<a class="desktop-link" href="#s_about_us">About Us</a>
+							<a class="desktop-link" href="#s_our_approch">Our Approch</a>
+							<a class="desktop-link" href="#s_works">Our Work</a>
 						</nav>
 
-						<a class="header-nav-btn" href="#s-consultation">Free Consultation</a>
+						<a class="desktop-btn" href="#s_consultation">Free Consultation</a>
 
-					</div>
-				</div>
+						<!-- mobile-nav -->
+						<nav class="mobile-nav" id="mobile_nav">
+							<a class="mobile-link is-active" id="link_1" href="#header">Home</a>
+							<a class="mobile-link" id="link_2" href="#s_about_us">About Us</a>
+							<a class="mobile-link" id="link_3" href="#s_our_approch">Our Approch</a>
+							<a class="mobile-link" id="link_4" href="#s_works">Our Work</a>
+							<a class="mobile-link" id="link_5" href="#s_consultation">Free Consultation</a>
+						</nav>
+
+						<button class="mobile-nav-toggle" id="nav_toggle" type="button">
+							<span class="nav-toggle-item">Menu</span>
+						</button>
+
+					</div> <!-- /.wrapper -->
+				</div> <!-- /.header-main-line -->
 
 				<div class="header-bg">
 					<div class="wrapper">
 
 						<h1 class="header-bg-title no-margin">We Providing</h1>
 						<span class="header-bg-subtitle">Social Media marketing for business</span>
-						<a class="header-btn" href="#s-consultation">Free Consultation</a>
+						<a class="header-btn" href="#s_consultation">Free Consultation</a>
 
 					</div>
 				</div>
@@ -66,7 +79,7 @@
 		<!-- End Section: Header -->
 
 		<!-- Section: About Us -->
-			<section class="s-about-us" id="s-about-us">
+			<section class="s-about-us s-padding" id="s_about_us">
 				<div class="wrapper">
 
 					<h2 class="section-title no-margin">About Us</h2>
@@ -95,200 +108,213 @@
 		<!-- End Section: About Us -->
 
 		<!-- Section: Our Approch -->
-			<section class="s-our-approch" id="s-our-approch">
+			<section class="s-our-approch s-padding" id="s_our_approch">
 				<div class="wrapper">
 
 					<h2 class="section-title no-margin">Our Approch</h2>
 					<span class="section-subtitle">Check Our approches step by step ( how we do it )</span>
 
-					<div class="approch-item clearfix">
-						<img class="approch-img img-responsive" src="images/our-approch/our-approch-1.jpg" alt="">
+					<div class="approch-items-wrapper clearfix">
+						<div class="approch-item approch-item-left clearfix">
+							<img class="approch-img img-responsive" src="images/our-approch/our-approch-1.jpg" alt="">
 
-						<div class="approch-step">
-							<div class="inner-step">1<br>step</div>
+							<div class="approch-step">
+								<div class="inner-step">1<br>step</div>
+							</div>
+
+							<div class="approch-content">
+								<h4 class="approch-title no-margin">Step 1 : Heading Here</h4>
+								<p class="approch-text no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+							</div>
 						</div>
 
-						<div class="approch-content">
-							<h4 class="approch-title no-margin">Step 1 : Heading Here</h4>
-							<p class="approch-text no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+						<div class="approch-item clearfix">
+							<img class="approch-img img-responsive approch-img--right" src="images/our-approch/our-approch-2.jpg" alt="">
+
+							<div class="approch-step approch-step--right">
+								<div class="inner-step">2<br>step</div>
+							</div>
+
+							<div class="approch-content approch-content--right">
+								<h4 class="approch-title no-margin">Step 2 : Heading Here</h4>
+								<p class="approch-text no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+							</div>
 						</div>
-					</div>
+					</div> <!-- /.approch-items-wrapper -->
 
-					<div class="approch-item clearfix">
-						<img class="approch-img img-responsive approch-img--right" src="images/our-approch/our-approch-2.jpg" alt="">
+					<div class="approch-items-wrapper clearfix">
+						<div class="approch-item approch-item-left clearfix">
+							<img class="approch-img img-responsive" src="images/our-approch/our-approch-3.jpg" alt="">
 
-						<div class="approch-step approch-step--right">
-							<div class="inner-step">2<br>step</div>
-						</div>
+							<div class="approch-step">
+								<div class="inner-step">3<br>step</div>
+							</div>
 
-						<div class="approch-content approch-content--right">
-							<h4 class="approch-title no-margin">Step 2 : Heading Here</h4>
-							<p class="approch-text no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-						</div>
-					</div>
-
-					<div class="approch-item clearfix">
-						<img class="approch-img img-responsive" src="images/our-approch/our-approch-3.jpg" alt="">
-
-						<div class="approch-step">
-							<div class="inner-step">3<br>step</div>
-						</div>
-
-						<div class="approch-content">
-							<h4 class="approch-title no-margin">Step 3 : Heading Here</h4>
-							<p class="approch-text no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-						</div>
-					</div>
-
-					<div class="approch-item clearfix">
-						<img class="approch-img img-responsive approch-img--right" src="images/our-approch/our-approch-4.jpg" alt="">
-
-						<div class="approch-step approch-step--right">
-							<div class="inner-step">4<br>step</div>
+							<div class="approch-content">
+								<h4 class="approch-title no-margin">Step 3 : Heading Here</h4>
+								<p class="approch-text no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+							</div>
 						</div>
 
-						<div class="approch-content approch-content--right">
-							<h4 class="approch-title no-margin">Step 4 : Heading Here</h4>
-							<p class="approch-text no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+						<div class="approch-item clearfix">
+							<img class="approch-img img-responsive approch-img--right" src="images/our-approch/our-approch-4.jpg" alt="">
+
+							<div class="approch-step approch-step--right">
+								<div class="inner-step">4<br>step</div>
+							</div>
+
+							<div class="approch-content approch-content--right">
+								<h4 class="approch-title no-margin">Step 4 : Heading Here</h4>
+								<p class="approch-text no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+							</div>
 						</div>
-					</div>
+					</div> <!-- /.approch-items-wrapper -->
 
 				</div> <!-- /.wrapper -->
 			</section>
 		<!-- End Section: Our Approch -->
 
 		<!-- Section: Works -->
-			<section class="s-works" id="s-our-work">
+			<section class="s-works s-padding" id="s_works">
 				<div class="wrapper clearfix">
 
 					<h2 class="section-title no-margin">Our Work</h2>
 					<span class="section-subtitle">We are added our featured works below</span>
 
-					<div class="works-col">
-						<div class="works-item">
-							<a href="#" target="_blank">
-								<img class="works-img img-responsive" src="images/our-works/work-1.jpg" alt="">
+					<div class="works-col-wrapper">
+						<div class="works-col">
+							<div class="works-item">
+								<a href="#" target="_blank">
+									<img class="works-img img-responsive" src="images/our-works/work-1.jpg" alt="">
 
-								<div class="works-info">
-									<i class="fab fa-telegram-plane"></i>
-									<div class="works-name">Project Name</div>
-									<div class="works-text">Facebook marketing</div>
-								</div>
-							</a>
-						</div>
+									<div class="works-info">
+										<i class="fab fa-telegram-plane"></i>
+										<div class="works-name">Project Name</div>
+										<div class="works-text">Facebook marketing</div>
+									</div>
+								</a>
+							</div>
 
-						<div class="works-item">
-							<a href="#" target="_blank">
-								<img class="works-img img-responsive" src="images/our-works/work-2.jpg" alt="">
+							<div class="works-item">
+								<a href="#" target="_blank">
+									<img class="works-img img-responsive" src="images/our-works/work-2.jpg" alt="">
 
-								<div class="works-info">
-									<i class="fab fa-telegram-plane"></i>
-									<div class="works-name">Project Name</div>
-									<div class="works-text">Landing page</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /.works-col -->
+									<div class="works-info">
+										<i class="fab fa-telegram-plane"></i>
+										<div class="works-name">Project Name</div>
+										<div class="works-text">Landing page</div>
+									</div>
+								</a>
+							</div>
+						</div> <!-- /.works-col -->
 
-					<div class="works-col">
-						<div class="works-item">
-							<a href="#" target="_blank">
-								<img class="works-img img-responsive" src="images/our-works/work-3.jpg" alt="">
+						<div class="works-col">
+							<div class="works-item">
+								<a href="#" target="_blank">
+									<img class="works-img img-responsive" src="images/our-works/work-3.jpg" alt="">
 
-								<div class="works-info">
-									<i class="fab fa-telegram-plane"></i>
-									<div class="works-name">Project Name</div>
-									<div class="works-text">Landing page</div>
-								</div>
-							</a>
-						</div>
+									<div class="works-info">
+										<i class="fab fa-telegram-plane"></i>
+										<div class="works-name">Project Name</div>
+										<div class="works-text">Landing page</div>
+									</div>
+								</a>
+							</div>
 
-						<div class="works-item">
-							<a href="#" target="_blank">
-								<img class="works-img img-responsive" src="images/our-works/work-4.jpg" alt="">
+							<div class="works-item">
+								<a href="#" target="_blank">
+									<img class="works-img img-responsive" src="images/our-works/work-4.jpg" alt="">
 
-								<div class="works-info">
-									<i class="fab fa-telegram-plane"></i>
-									<div class="works-name">Project Name</div>
-									<div class="works-text">Facebook marketing</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /.works-col -->
+									<div class="works-info">
+										<i class="fab fa-telegram-plane"></i>
+										<div class="works-name">Project Name</div>
+										<div class="works-text">Facebook marketing</div>
+									</div>
+								</a>
+							</div>
+						</div> <!-- /.works-col -->
 
-					<div class="works-col">
-						<div class="works-item">
-							<a href="#" target="_blank">
-								<img class="works-img img-responsive" src="images/our-works/work-2.jpg" alt="">
+						<div class="works-col">
+							<div class="works-item">
+								<a href="#" target="_blank">
+									<img class="works-img img-responsive" src="images/our-works/work-2.jpg" alt="">
 
-								<div class="works-info">
-									<i class="fab fa-telegram-plane"></i>
-									<div class="works-name">Project Name</div>
-									<div class="works-text">Facebook marketing</div>
-								</div>
-							</a>
-						</div>
+									<div class="works-info">
+										<i class="fab fa-telegram-plane"></i>
+										<div class="works-name">Project Name</div>
+										<div class="works-text">Facebook marketing</div>
+									</div>
+								</a>
+							</div>
 
-						<div class="works-item">
-							<a href="#" target="_blank">
-								<img class="works-img img-responsive" src="images/our-works/work-1.jpg" alt="">
+							<div class="works-item">
+								<a href="#" target="_blank">
+									<img class="works-img img-responsive" src="images/our-works/work-1.jpg" alt="">
 
-								<div class="works-info">
-									<i class="fab fa-telegram-plane"></i>
-									<div class="works-name">Project Name</div>
-									<div class="works-text">Landing page</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /.works-col -->
+									<div class="works-info">
+										<i class="fab fa-telegram-plane"></i>
+										<div class="works-name">Project Name</div>
+										<div class="works-text">Landing page</div>
+									</div>
+								</a>
+							</div>
+						</div> <!-- /.works-col -->
 
-					<div class="works-col">
-						<div class="works-item">
-							<a href="#" target="_blank">
-								<img class="works-img img-responsive" src="images/our-works/work-4.jpg" alt="">
+						<div class="works-col">
+							<div class="works-item">
+								<a href="#" target="_blank">
+									<img class="works-img img-responsive" src="images/our-works/work-4.jpg" alt="">
 
-								<div class="works-info">
-									<i class="fab fa-telegram-plane"></i>
-									<div class="works-name">Project Name</div>
-									<div class="works-text">Landing page</div>
-								</div>
-							</a>
-						</div>
+									<div class="works-info">
+										<i class="fab fa-telegram-plane"></i>
+										<div class="works-name">Project Name</div>
+										<div class="works-text">Landing page</div>
+									</div>
+								</a>
+							</div>
 
-						<div class="works-item">
-							<a href="#" target="_blank">
-								<img class="works-img img-responsive" src="images/our-works/work-3.jpg" alt="">
+							<div class="works-item">
+								<a href="#" target="_blank">
+									<img class="works-img img-responsive" src="images/our-works/work-3.jpg" alt="">
 
-								<div class="works-info">
-									<i class="fab fa-telegram-plane"></i>
-									<div class="works-name">Project Name</div>
-									<div class="works-text">Facebook marketing</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /.works-col -->
+									<div class="works-info">
+										<i class="fab fa-telegram-plane"></i>
+										<div class="works-name">Project Name</div>
+										<div class="works-text">Facebook marketing</div>
+									</div>
+								</a>
+							</div>
+						</div> <!-- /.works-col -->
+				</div> <!-- /.works-col-wrapper -->
 
 				</div> <!-- /.wrapper -->
 			</section>
 		<!-- End Section: Works -->
 
 		<!-- Section: Consultation -->
-			<section class="s-consultation" id="s-consultation">
+			<section class="s-consultation s-padding" id="s_consultation">
 				<div class="wrapper">
 
 					<h2 class="section-title no-margin">Get Your Free Facebook Analysis Now</h2>
 					<span class="section-subtitle">Enter your details below</span>
 
-					<div class="form-wrapper">
-						<div class="form-text">Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
-						</div>
+					<button class="display-form-btn" id="display_form_btn" type="button"><i class="fas fa-chevron-up"></i></button>
 
-						<form name="consultation-form" action="#" method="post">
-							<input class="form-input" type="text" name="name" placeholder="Your Name" autocomplete="off" required>
-							<input class="form-input" type="tel" name="phone" placeholder="Contact Number" autocomplete="off" required>
-							<input class="form-input" type="text" name="company-name" placeholder="Company Name" autocomplete="off">
-							<button class="form-btn" type="submit" name="submit">Submit now</button>
-						</form>
+					<div id="form_wrapper">
+						<div class="form-wrapper">
+
+							<button class="hide-form-btn" id="hide_form_btn" type="button"><i class="fas fa-times"></i></button>
+
+							<div class="form-text">Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
+							</div>
+
+							<form name="consultation-form" action="#" method="post">
+								<input class="form-input" type="text" name="name" placeholder="Your Name" autocomplete="off" required>
+								<input class="form-input" type="tel" name="phone" placeholder="Contact Number" autocomplete="off" required>
+								<input class="form-input" type="text" name="company-name" placeholder="Company Name" autocomplete="off">
+								<button class="form-btn" type="submit" name="submit">Submit now</button>
+							</form>
+						</div>
 					</div>
 
 				</div> <!-- /.wrapper -->
@@ -328,7 +354,7 @@
 
 		<!-- JS Locals -->
 			<script src="libs/jquery/jquery-3.4.1.min.js"></script>
-			<script src="js/common.js"></script>
+			<script src="js/common.min.js"></script>
 	</body>
 
 </html>
