@@ -743,6 +743,8 @@ Section: Consultation
 }
 .display-form-btn {
 	display: block;
+	position: relative;
+	z-index: 2;
 	margin: 0 auto;
 
 	width: 65px;
