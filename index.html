@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="description" content="">
 		<meta name="author" content="Andrei Bagmet">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 		<title>business-agency</title>
 
@@ -298,17 +298,19 @@
 					<h2 class="section-title no-margin">Get Your Free Facebook Analysis Now</h2>
 					<span class="section-subtitle">Enter your details below</span>
 
-					<button class="display-form-btn" id="display_form_btn" type="button"><i class="fas fa-chevron-up"></i></button>
+					<!-- form display button -->
+					<i class="form-display fas fa-chevron-circle-up" id="form_display"></i>
 
 					<div id="form_wrapper">
 						<div class="form-wrapper">
 
-							<button class="hide-form-btn" id="hide_form_btn" type="button"><i class="fas fa-times"></i></button>
+							<!-- form hide button -->
+							<i class="form-hide fas fa-times-circle" id="form_hide"></i>
 
 							<div class="form-text">Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
 							</div>
 
-							<form name="consultation-form" action="#" method="post">
+							<form class="consultation-form" name="consultation-form" action="#" method="post">
 								<input class="form-input" type="text" name="name" placeholder="Your Name" autocomplete="off" required>
 								<input class="form-input" type="tel" name="phone" placeholder="Contact Number" autocomplete="off" required>
 								<input class="form-input" type="text" name="company-name" placeholder="Company Name" autocomplete="off">
@@ -334,7 +336,7 @@
 						<a class="footer-social-link" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 					</div>
 
-					<form name="footer-form" action="#" method="post">
+					<form class="footer-form" name="footer-form" action="#" method="post">
 						<div class="footer-form-title">Subscribe to our newsletter to stay update with what is new</div>
 						
 						<input class="footer-form-input" type="email" name="email" placeholder="Email Address" autocomplete="off" required>

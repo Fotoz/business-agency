@@ -294,7 +294,7 @@ Responsive Media Queries
 	.form-wrapper {
 		padding: 40px 30px;
 	}
-	.hide-form-btn {
+	.form-hide {
 		display: none;
 	}
 

@@ -82,7 +82,7 @@ $(function() {
 
 
 // display-form-btn - ( кнопка влияющая на отображение формы )
-	$('#display_form_btn').on('click', function(event) {
+	$('#form_display').on('click', function(event) {
 		event.preventDefault();
 
 		$(this).toggleClass('is-active');
@@ -91,10 +91,10 @@ $(function() {
 
 
 // hide-form-btn - ( кнопка влияющая на отображение формы )
-	$('#hide_form_btn').on('click', function(event) {
+	$('#form_hide').on('click', function(event) {
 		event.preventDefault();
 
-		$('#display_form_btn').removeClass('is-active');
+		$('#form_display').removeClass('is-active');
 		$('#form_wrapper').slideToggle();
 	});
 

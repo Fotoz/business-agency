@@ -94,6 +94,11 @@ ul li {
 	list-style: none;
 }
 input,
+textarea {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+input,
 textarea,
 button {
 	border: none;
@@ -655,7 +660,9 @@ Section: Consultation
 
 .s-consultation {
 	background-color: #1287bf;
+
 	color: #fff;
+	text-align: center;
 }
 .s-consultation .section-subtitle {
 	margin-bottom: 20px;
@@ -695,26 +702,30 @@ Section: Consultation
 .form-text {
 	font-size: 15px;
 	color: #828282;
-	text-align: center;
 
 	margin-bottom: 35px;
 }
 
 /* consultation-form */
+.consultation-form {
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto;
+}
 .form-input {
 	font: 14px 'NunitoSansRegular';
 	color: #828282;
 
 	display: block;
 	width: 100%;
-	max-width: 450px;
 	padding: 15px;
-	margin: 0 auto 10px;
 
 	border: 1px solid #d8d8d8;
 	border-radius: 3px;
-
 	transition: all .15s linear;
+}
+.form-input:not(:last-child) {
+	margin-bottom: 10px;
 }
 .form-input:focus {
 	border-color: #1287bf;
@@ -741,45 +752,29 @@ Section: Consultation
 .form-btn:hover {
 	background-color: #b9241e;
 }
-.display-form-btn {
-	display: block;
-	position: relative;
-	z-index: 2;
-	margin: 0 auto;
+.form-display {
+	font-size: 55px;
 
-	width: 65px;
-	height: 65px;
-
-	color: #fff;
-	font-size: 26px;
-
-	background: none;
-	border-radius: 50%;
-	border: 3px solid #fff;
 	cursor: pointer;
-
+	transform-origin: 50% 50% 0;
 	transition: transform .2s linear;
 }
-.display-form-btn.is-active {
+.form-display.is-active {
 	transform: rotate(180deg);
 }
-.hide-form-btn {
+.form-hide {
 	position: absolute;
 	top: -25px;
 	right: -25px;
 	z-index: 10;
 
-	width: 50px;
-	height: 50px;
+	font-size: 50px;
+	color: #de2b24;
 
-	color: #fff;
-	font-size: 23px;
-	line-height: 47px;
-
-	background: #de2b24;
-	border-radius: 50%;
-	border: 2px solid #fff;
 	cursor: pointer;
+	background: #fff;
+	border: 2px solid #fff;
+	border-radius: 50%;
 }
 
 /*** ======================================================================
@@ -821,6 +816,11 @@ Section: Footer
 }
 
 /* footer-form */
+.footer-form {
+	width: 100%;
+	max-width: 690px;
+	margin: 0 auto;
+}
 .footer-form-title {
 	font-size: 14px;
 	color: #cecece;
@@ -833,8 +833,7 @@ Section: Footer
 
 	display: block;
 	width: 100%;
-	max-width: 690px;
-	margin: 0 auto 25px;
+	margin-bottom: 25px;
 	padding: 15px;
 
 	background-color: #515151;
